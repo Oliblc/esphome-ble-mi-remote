@@ -416,7 +416,7 @@ namespace esphome {
           _keyReport.modifiers |= (1 << (k - 128));
           k = 0;
         } else {        // it's a printing key
-          k = pgm_read_byte(_asciimap + k);
+          k = progmem_read_byte(_asciimap + k);
           if (!k) {
 
             return;
